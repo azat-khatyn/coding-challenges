@@ -7,14 +7,13 @@ def majority(lst):
             counter[element] += 1
         else:
             counter[element] = 1
-
     sorted_elements = sorted(counter.items(), key=lambda x: x[1], reverse=True)
     print(sorted_elements)
     m_element = sorted_elements[0][0]
-    # if m_element > n_by_2:
-    return m_element
-    #else:
-    #    return 0
+    if sorted_elements[0][1] >= n_by_2:
+        return m_element
+    else:
+        return 0
 
 
 lst1 = [2, 2, 1, 2, 3]
