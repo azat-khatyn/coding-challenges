@@ -1,4 +1,4 @@
-def hanoi(n, source, target, spare):
+jjdef hanoi(n, source, target, spare):
     if n > 0:
         hanoi(n-1, source, spare, target)
         target.append(source.pop())
